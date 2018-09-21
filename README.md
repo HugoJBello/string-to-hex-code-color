@@ -24,21 +24,21 @@ and to obtain an hexadecimal code color from a string you just:
 
 
 ```typescript
-    const string2HexCodeColor = new String2HexCodeColor();
-    console.log("color for the text 'Text Example':")
-    console.log(string2HexCodeColor.stringToColor('Text Example'))
+const string2HexCodeColor = new String2HexCodeColor();
+console.log("color for the text 'Text Example':")
+console.log(string2HexCodeColor.stringToColor('Text Example'))
 
-    console.log("color for the text 'Text Example':")
-    console.log(string2HexCodeColor.stringToColor('Text Example2'))
+console.log("color for the text 'Text Example':")
+console.log(string2HexCodeColor.stringToColor('Text Example2'))
 ```
 
 this will give you the hex colors: 
 
 ```
-    color for the text 'Text Example':
-    #0c5401
-    color for the text 'Text Example2':
-    #17454f
+color for the text 'Text Example':
+#0c5401
+color for the text 'Text Example2':
+#17454f
 ```
 
 which are
@@ -56,4 +56,4 @@ By adding a numeric parameter in the constructor you can change the shade. For i
     const string2HexCodeColor = new String2HexCodeColor(0.2);
 ```
 
-will give you lighter colors. The default shade is -0.6, the greater the shade the lighter the colors will be
+will give you lighter colors. The default shade is -0.6, the greater the shade the lighter the colors will be.
