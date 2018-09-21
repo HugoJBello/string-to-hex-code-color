@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/string-to-hex-code-color.svg)](https://badge.fury.io/js/ngx-string-to-css-color)
+[![npm version](https://badge.fury.io/js/string-to-hex-code-color.svg)](https://badge.fury.io/js/string-to-hex-code-color)
 
 string-to-hex-code-color
 ===========
