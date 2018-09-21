@@ -6,8 +6,6 @@ An javascript library that lets you obtain css colors (hexadecimal code) from st
 
 [Bug-reports or feature request](https://github.com/HugoJBello/string-to-hex-code-color/issues) as well as any other kind of **feedback is highly welcome!**
 
-#Check the [**live demo here!!**](https://ngx-string-to-css-color.firebaseapp.com/)
-
 To install the package just use:
 
 ```
@@ -44,11 +42,11 @@ this will give you the hex colors:
 
 which are
 
-![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/str2col1TextExample.png)
+![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/str2col1TextExample.png)
 
 and 
 
-![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/str2col1TextExample2.png)
+![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/str2col1TextExample2.png)
 
 
 By adding a numeric parameter in the constructor you can change the shade. For instance:
