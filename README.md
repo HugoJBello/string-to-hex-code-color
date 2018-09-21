@@ -44,11 +44,11 @@ this will give you the hex colors:
 
 which are
 
-![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/str2col1Text Example.png)
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/str2col1TextExample.png)
 
 and 
 
-![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/str2col1Text Example2.png)
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/str2col1TextExample2.png)
 
 
 By adding a numeric parameter in the constructor you can change the shade. For instance:
@@ -56,4 +56,5 @@ By adding a numeric parameter in the constructor you can change the shade. For i
 ```typescript
     const string2HexCodeColor = new String2HexCodeColor(0.2);
 ```
+
 will give you lighter colors. The default shade is -0.6, the greater the shade the lighter the colors will be
