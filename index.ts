@@ -4,7 +4,7 @@ export class String2HexCodeColor {
     defaultShadePercentage = -0.6;
 
     constructor(defaultShadePercentage?: number) {
-        this.defaultShadePercentage = defaultShadePercentage;
+        if(defaultShadePercentage) this.defaultShadePercentage = defaultShadePercentage;
     }
 
     shadeColor(color: string, percent: number) {
