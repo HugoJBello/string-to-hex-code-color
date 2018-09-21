@@ -1,0 +1,7 @@
+{
+  "name": "string-to-hex-code-color",
+  "version": "0.0.3",
+  "url": "https://github.com/HugoJBello/string-to-hex-code-color",
+  "homepage": "https://github.com/HugoJBello/string-to-hex-code-color",
+  "peerDependencies": {}
+}
