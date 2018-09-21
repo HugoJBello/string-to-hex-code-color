@@ -1,6 +1,7 @@
 [![npm version](https://badge.fury.io/js/string-to-hex-code-color.svg)](https://badge.fury.io/js/ngx-string-to-css-color)
 
-string-to-hex-code-color===========
+string-to-hex-code-color
+===========
 
 An javascript library that lets you obtain css colors (hexadecimal code) from strings of text using hash functions. **Different text inputs will give you different colors**, which makes it a great tool to visualize different tags or text strings. 
 
