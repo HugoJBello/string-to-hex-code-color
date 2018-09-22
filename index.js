@@ -2,8 +2,9 @@
 exports.__esModule = true;
 var String2HexCodeColor = /** @class */ (function () {
     function String2HexCodeColor(defaultShadePercentage) {
-        this.defaultShadePercentage = -0.6;
-        this.defaultShadePercentage = defaultShadePercentage;
+        this.defaultShadePercentage = 0;
+        if (defaultShadePercentage)
+            this.defaultShadePercentage = defaultShadePercentage;
     }
     String2HexCodeColor.prototype.shadeColor = function (color, percent) {
         if (!percent) {
@@ -20,7 +21,11 @@ var String2HexCodeColor = /** @class */ (function () {
         return result;
     };
     String2HexCodeColor.prototype.stringToColor = function (str, shadePercentage) {
-        str = str + this.preHash(str).toString();
+        if (!str)
+            str = "";
+        if (str.length < 4) {
+            str = str + this.preHash(str).toString();
+        }
         var hash = 0;
         for (var i = 0; i < str.length; i++) {
             hash = str.charCodeAt(i) + ((hash << 5) - hash);
@@ -30,7 +35,10 @@ var String2HexCodeColor = /** @class */ (function () {
             var value = (hash >> (i * 8)) & 0xFF;
             colour += ('00' + value.toString(16)).substr(-2);
         }
-        return this.shadeColor(colour, shadePercentage);
+        if (shadePercentage || (this.defaultShadePercentage !== 0)) {
+            return this.shadeColor(colour, shadePercentage);
+        }
+        return colour;
     };
     String2HexCodeColor.prototype.preHash = function (str) {
         {

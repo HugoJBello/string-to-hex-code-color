@@ -4,7 +4,8 @@
   "description": "lets you obtain hexadecimal color code from strings of text.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile_ts": "tsc **.ts",
+    "test": "tsc tests/testUtils.ts && tsc tests/basicConfig.test.ts && mocha tests/basicConfig.test.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/HugoJBello/string-to-hex-code-color/issues"
   },
-  "homepage": "https://github.com/HugoJBello/string-to-hex-code-color#readme"
+  "homepage": "https://github.com/HugoJBello/string-to-hex-code-color#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.5",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  }
 }

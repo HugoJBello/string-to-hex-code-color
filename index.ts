@@ -1,7 +1,7 @@
 
 
 export class String2HexCodeColor {
-    defaultShadePercentage = -0.6;
+    defaultShadePercentage = 0;
 
     constructor(defaultShadePercentage?: number) {
         if(defaultShadePercentage) this.defaultShadePercentage = defaultShadePercentage;
@@ -23,7 +23,11 @@ export class String2HexCodeColor {
     }
 
     stringToColor(str: string, shadePercentage?: number) {
-        str = str + this.preHash(str).toString();
+        if (!str) str = "";
+        if (str.length<4){
+            str = str + this.preHash(str).toString();
+        }
+
         let hash = 0;
         for (let i = 0; i < str.length; i++) {
             hash = str.charCodeAt(i) + ((hash << 5) - hash);
@@ -33,7 +37,10 @@ export class String2HexCodeColor {
             const value = (hash >> (i * 8)) & 0xFF;
             colour += ('00' + value.toString(16)).substr(-2);
         }
-        return this.shadeColor(colour, shadePercentage);
+        if (shadePercentage || (this.defaultShadePercentage!==0)){
+            return this.shadeColor(colour, shadePercentage);
+        }
+        return colour;
     }
 
     preHash(str: string) {
