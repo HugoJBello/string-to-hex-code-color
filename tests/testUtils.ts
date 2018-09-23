@@ -8,7 +8,7 @@ public calculateDiff(string1:string, string2:string): number{
 
 //https://stackoverflow.com/questions/13006556/check-if-two-strings-share-a-common-substring-in-javascript
 // Note: not fully tested, there may be bugs:
-public subCompare (needle, haystack, min_substring_length) {
+public subCompare (needle:any, haystack:any, min_substring_length:number) {
 
     // Min substring length is optional, if not given or is 0 default to 1:
     min_substring_length = min_substring_length || 1;

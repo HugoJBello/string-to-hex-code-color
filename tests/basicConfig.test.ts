@@ -1,10 +1,9 @@
-// npm install mocha chai @types/chai @types/mocha ts-node --save-dev
 import { expect } from 'chai';
 import 'mocha';
 import { String2HexCodeColor } from '../index';
 import {TestUtils} from './testUtils';
 
-const basicStringArray = [undefined,"some text", "SOME TEXT", "more text", "apples", "bannanas", "", "f"]
+const basicStringArray = ["some text", "SOME TEXT", "more text", "apples", "bannanas", "", "f"]
 const smallSizedTextArrary = ["a","b","c","d","e","f","g","h","1","2","3","4"]
 const testUtils = new TestUtils();
 
@@ -33,7 +32,7 @@ describe('Testing the default config with small strings', () => {
     const str2HexColor: String2HexCodeColor = new String2HexCodeColor();
     let obtainedColorArray = [];
 
-    let reducerCalcColor = (accumulator, value) => {accumulator.push(str2HexColor.stringToColor(value)); return accumulator};
+    let reducerCalcColor = (accumulator:any, value:string) => {accumulator.push(str2HexColor.stringToColor(value)); return accumulator};
     let colorArray = smallSizedTextArrary.reduce(reducerCalcColor,[]);
     
     for (let i=2; i<colorArray.length;i++){
