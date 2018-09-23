@@ -7,7 +7,7 @@ export class String2HexCodeColor {
         if(defaultShadePercentage) this.defaultShadePercentage = defaultShadePercentage;
     }
 
-    shadeColor(color: string, percent: number) {
+    shadeColor(color: string, percent: number | undefined) {
         if (!percent) {
             percent = this.defaultShadePercentage;
         }
