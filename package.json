@@ -1,6 +1,6 @@
 {
   "name": "string-to-hex-code-color",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "lets you obtain hexadecimal color code from strings of text.",
   "main": "index.js",
   "scripts": {
