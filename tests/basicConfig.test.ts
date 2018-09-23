@@ -11,7 +11,6 @@ const testUtils = new TestUtils();
 describe('Testing the default config', () => {
   it('should transform a string in a hex code', () => {
     const str2HexColor: String2HexCodeColor = new String2HexCodeColor();
-    let obtainedColorArray = [];
     for (let str of basicStringArray){
         const obtainedColor = str2HexColor.stringToColor(str);
         expect(obtainedColor).not.to.equal(undefined);
@@ -22,7 +21,6 @@ describe('Testing the default config', () => {
 describe('Testing the default config with shade', () => {
   it('should transform a string in a hex code and shade the color', () => {
     const str2HexColor: String2HexCodeColor = new String2HexCodeColor(-0.6);
-    let obtainedColorArray = [];
     console.log(testUtils.calculateDiff("aaaaa1","2aaa"));
     for (let str of basicStringArray){
         const obtainedColor = str2HexColor.stringToColor(str);
@@ -33,7 +31,18 @@ describe('Testing the default config with shade', () => {
 
 describe('Testing the default config with small strings', () => {
   it('small strings should be assinged colors that are different enough', () => {
+    const str2HexColor: String2HexCodeColor = new String2HexCodeColor();
+    let obtainedColorArray = [];
+    console.log(testUtils.calculateDiff("aaaaa1","2aaa"));
+
+    let reducerCalcColor = (accumulator, value) => {accumulator.push(str2HexColor.stringToColor(value)); return accumulator};
+    let colorArray = smallSizedTextArrary.reduce(reducerCalcColor,[]);
     
+    for (let i=2; i<colorArray.length;i++){
+        let diff =testUtils.calculateDiff(colorArray[i],colorArray[i-1]);
+        console.log(diff);
+        expect(diff).to.lessThan(4);
+    }
   });
 })
 
