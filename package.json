@@ -1,11 +1,11 @@
 {
   "name": "string-to-hex-code-color",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "lets you obtain hexadecimal color code from strings of text.",
   "main": "index.js",
   "scripts": {
     "compile_ts": "tsc **.ts",
-    "test":"mocha -r ts-node/register tests/**/*.test.ts",
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
     "test_alt": "tsc tests/testUtils.ts && tsc tests/basicConfig.test.ts && mocha tests/basicConfig.test.js"
   },
   "repository": {
