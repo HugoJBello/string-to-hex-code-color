@@ -7,6 +7,9 @@ An javascript library that lets you obtain css colors (hexadecimal code) from st
 
 [Bug-reports or feature request](https://github.com/HugoJBello/string-to-hex-code-color/issues) as well as any other kind of **feedback is highly welcome!**
 
+
+Check the [**live demo here!!**](https://string-to-hex-code-color.firebaseapp.com/)
+
 To install the package just use:
 
 ```
@@ -25,20 +28,20 @@ and to obtain an hexadecimal code color from a string you just:
 
 ```typescript
 const string2HexCodeColor = new String2HexCodeColor();
-console.log("color for the text 'Text Example':")
-console.log(string2HexCodeColor.stringToColor('Text Example'))
+console.log("color for the text 'Test Text':")
+console.log(string2HexCodeColor.stringToColor('Test Text'))
 
-console.log("color for the text 'Text Example':")
-console.log(string2HexCodeColor.stringToColor('Text Example2'))
+console.log("color for the text 'Test Text':")
+console.log(string2HexCodeColor.stringToColor('Test Text2'))
 ```
 
 this will give you the hex colors: 
 
 ```
-color for the text 'Text Example':
-#0c5401
-color for the text 'Text Example2':
-#17454f
+color for the text 'Test Text':
+#fb8f94
+color for the text 'Test Text2':
+#976ffd
 ```
 
 which are
@@ -49,11 +52,48 @@ and
 
 ![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/str2col1TextExample2.png)
 
+#Shade
 
-By adding a numeric parameter in the constructor you can change the shade. For instance:
+If you want to obtain darker or lighter colors than usual you can add a second parameter to shade the output. For instance
+
+
+```typescript
+const string2HexCodeColor = new String2HexCodeColor();
+console.log("color for the text 'Test Text' with shade -0.5")
+console.log(string2HexCodeColor.stringToColor('Test Text',-0.5))
+
+console.log("color for the text 'Test Text' with shade -0.2")
+console.log(string2HexCodeColor.stringToColor('Test Text',-0.2))
+
+console.log("color for the text 'Test Text' with shade 0.2")
+console.log(string2HexCodeColor.stringToColor('Test Text',0.2))
+```
+
+this will give you the hex colors: 
+
+```
+color for the text 'Test Text' with shade -0.5
+#7e484a
+color for the text 'Test Text2' with shade -0.2:
+#c97276
+color for the text 'Test Text2' with shade 0.2:
+#fca5a9
+```
+
+which are
+
+![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade1.png)
+
+
+![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade2.png)
+
+![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade3.png)
+
+#Default shade
+The default shade is 0, but by adding a numeric parameter in the constructor you can change the shade. For instance:
 
 ```typescript
     const string2HexCodeColor = new String2HexCodeColor(0.2);
 ```
 
-will give you lighter colors. The default shade is -0.6, the greater the shade the lighter the colors will be.
+will give you lighter colors.
