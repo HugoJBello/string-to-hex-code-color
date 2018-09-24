@@ -47,11 +47,7 @@ color for the text 'Test Text2':
 
 which are
 
-![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/str2col1TextExample.png)
-
-and 
-
-![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/str2col1TextExample2.png)
+![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/str2col1TextExample.png) and ![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/str2col1TextExample2.png)
 
 # Shade
 
