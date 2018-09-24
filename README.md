@@ -90,6 +90,10 @@ which are
 
 ![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade3.png)
 
+Here you have more examples with different shades:
+
+![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/table.png)
+
 ## Default shade
 The default shade is 0, but by adding a numeric parameter in the constructor you can change the shade. For instance:
 
