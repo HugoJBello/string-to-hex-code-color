@@ -2,6 +2,7 @@
 
 string-to-hex-code-color
 ===========
+# Basic usage
 
 An javascript library that lets you obtain css colors (hexadecimal code) from strings of text using hash functions. **Different text inputs will give you different colors**, which makes it a great tool to visualize different tags or text strings. 
 
@@ -89,7 +90,7 @@ which are
 
 ![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade3.png)
 
-#Default shade
+## Default shade
 The default shade is 0, but by adding a numeric parameter in the constructor you can change the shade. For instance:
 
 ```typescript
