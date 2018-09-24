@@ -75,14 +75,7 @@ color for the text 'Test Text2' with shade 0.2:
 #fca5a9
 ```
 
-which are
-
-![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade1.png)
-
-
-![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade2.png)
-
-![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade3.png)
+which are ![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade1.png) ![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade2.png) ![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/shade3.png)
 
 Here you have more examples with different shades:
 
