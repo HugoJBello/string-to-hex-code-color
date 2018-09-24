@@ -52,7 +52,7 @@ and
 
 ![](https://raw.githubusercontent.com/HugoJBello/string-to-hex-code-color/master/screenshots/str2col1TextExample2.png)
 
-#Shade
+# Shade
 
 If you want to obtain darker or lighter colors than usual you can add a second parameter to shade the output. For instance
 
